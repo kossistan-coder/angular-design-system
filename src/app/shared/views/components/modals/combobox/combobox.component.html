@@ -1,0 +1,94 @@
+<app-p-modal [isOpen]="isOpen" [actionOnOutsideClick]="actionOnOutsideClick" (closeEmiter)="close()">
+  <div modal-header>
+    <div class="flex flex-col gap-y-1 text-white">
+      <span>{{title}}</span>
+      <span class=" text-xs text-gray-300">{{subTitle}}</span>
+    </div>
+  </div>
+
+  <div class=" flex flex-col gap-y-4" modal-content>
+
+        <div>
+            <app-input
+            id="search"
+            text="search"
+            [control]="control"
+            name="search"
+            [inputType]="'text'"
+            [placeholder]="'search user'"
+            [searchable]="true"
+            [classList]="'search-input'"
+          >
+          </app-input>
+
+        </div>
+
+    <div class=" flex flex-col text-white max-h-72 overflow-y-auto menu-scroll">
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/01.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Olivia Martin</span>
+          <span class=" text-xs text-gray-300">{{'m@gmail.com'}}</span>
+        </div>
+      </div>
+
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/02.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Isabelle Nguyen</span>
+          <span class=" text-xs text-gray-300">{{'m@gmail.com'}}</span>
+        </div>
+      </div>
+
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/03.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Jakson Lee</span>
+          <span class=" text-xs text-gray-300">{{'emma@gmail.com'}}</span>
+        </div>
+      </div>
+
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/02.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Isabelle Nguyen</span>
+          <span class=" text-xs text-gray-300">{{'m@gmail.com'}}</span>
+        </div>
+      </div>
+
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/03.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Jakson Lee</span>
+          <span class=" text-xs text-gray-300">{{'emma@gmail.com'}}</span>
+        </div>
+      </div>
+
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/02.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Isabelle Nguyen</span>
+          <span class=" text-xs text-gray-300">{{'m@gmail.com'}}</span>
+        </div>
+      </div>
+
+      <div class=" flex gap-x-4 items-center hover:bg-primary p-3 cursor-pointer rounded-lg">
+        <img src="/images/03.png" class=" rounded-full h-10 w-10"  alt="">
+        <div class=" flex flex-col">
+          <span class=" text-lg">Jakson Lee</span>
+          <span class=" text-xs text-gray-300">{{'emma@gmail.com'}}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div modal-footer class="flex  flex-col-reverse sm:flex-row sm:justify-between sm:space-x-2 items-center">
+    <div class="text-white">Select users to add to this thread.</div>
+      <button class="w-20 bg-white p-2 rounded-md text-center">
+        Apply
+      </button>
+  </div>
+</app-p-modal>

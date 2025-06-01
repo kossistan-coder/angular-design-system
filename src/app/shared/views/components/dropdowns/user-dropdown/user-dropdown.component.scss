@@ -1,0 +1,11 @@
+.dropdown-item {
+  @apply relative flex cursor-default select-none hover:bg-primary items-center rounded cursor-pointer px-2 py-1.5 text-sm outline-none transition-colors;
+}
+
+.shortcut {
+  @apply ml-auto text-xs tracking-widest opacity-60;
+}
+
+.icon {
+  @apply w-4 h-4 mr-2 stroke-current;
+}

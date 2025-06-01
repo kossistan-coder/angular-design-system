@@ -1,0 +1,73 @@
+    /* SCSS pour le dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Version hover */
+    .dropdown.hover:hover .dropdown-menu,
+    .dropdown.hover .dropdown-menu:hover {
+      display: block;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    /* Version avec checkbox */
+    .dropdown-toggle {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .dropdown-toggle:checked ~ .dropdown-menu {
+      display: block;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .dropdown-toggle:checked ~ .dropdown-label .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      display: block;
+      opacity: 0;
+      transform: translateY(-10px) scale(0.95);
+      transform-origin: top right;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      pointer-events: none;
+    }
+
+    .dropdown-item {
+      transition: background-color 0.15s ease;
+    }
+
+    .dropdown-item:active {
+      transform: scale(0.98);
+    }
+
+    .dropdown-divider {
+      height: 1px;
+      margin: 0.5rem 0;
+      background-color: #e5e7eb;
+    }
+
+    /* Animation pour l'icône de flèche */
+    .dropdown-arrow {
+      transition: transform 0.2s ease;
+    }
+
+           /* Style spécifique pour le dropdown avec focus */
+           .dropdown:focus-within .dropdown-menu {
+            display: block;
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
+          }
+
+          .dropdown:focus-within .dropdown-arrow {
+            transform: rotate(180deg);
+          }

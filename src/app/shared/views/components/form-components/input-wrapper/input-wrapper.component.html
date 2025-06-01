@@ -1,0 +1,19 @@
+@if (isVisible) {
+  <div
+  #div
+  class=" tw-flex tw-gap-y-3"
+  >
+
+  <ng-content></ng-content>
+  @if ( control.touched &&
+  control.errors !== null &&
+  control.errors!['required']) {
+    <label class="system-input-error">Ce champ est requis !</label>
+  }@else if ( control.touched &&
+  control.errors !== null &&
+  control.errors!['email']) {
+    <label class="system-input-error">L'email est invalide !</label>
+  }
+
+  </div>
+}

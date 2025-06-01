@@ -2,7 +2,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { DropdDownItemControl } from '../../../../../shared/models/dropdown.interface';
 import { Component, OnInit } from '@angular/core';
 import { searchForm } from '../../../core/models/form';
-import { FormValidators } from '../../../../../core/providers/forms/form';
+import { FormValidators } from '../../../../../core/services/providers/forms/form';
 import { FormControlValueInterface } from '../../../../../shared/interfaces/form';
 
 @Component({

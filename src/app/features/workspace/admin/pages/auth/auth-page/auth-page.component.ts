@@ -3,7 +3,7 @@ import { InputWrapperComponent } from "../../../../../../shared/views/components
 import { FormControl, FormGroup } from '@angular/forms';
 import { AuthForm } from '../../../../core/models/form';
 import { FormControlValueInterface } from '../../../../../../shared/interfaces/form';
-import { FormValidators } from '../../../../../../core/providers/forms/form';
+import { FormValidators } from '../../../../../../core/services/providers/forms/form';
 
 @Component({
   selector: 'app-auth-page',

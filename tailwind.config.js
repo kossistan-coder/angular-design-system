@@ -12,6 +12,10 @@ module.exports = {
         success: '#10b981',
         warning: '#f59e0b',
         dark: '#0f172a',
+        'navy': '#1a1f36',
+        'navy-light': '#252b42',
+        'accent': '#ff6b35',
+        'accent-hover': '#e55a2b',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
